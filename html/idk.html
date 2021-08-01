@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:white;
+}
+
+.topnav a {
+  float: left;
+  color: Green;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color:green;
+}
+
+.topnav a.active {
+  background-color: white;
+   text-align: left;
+   padding: 20px 700px 20px 20px;
+  color: Green;
+  font-size: 40px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<div style="text-align:left">
+  <a class="active" href="./welcome.html">Agrico.</a>
+</div>
+   <a href= "product.html">Product</a>
+  <a href="./contact.html">Questions</a>
+  <a href="#about">Our services</a>
+</div>
+
+<h1>Our Services</h1>
+<p style="font-size:100%; font-weight:bold" >We would like to introduce you to our loans and donations programmes!
+</p>
+<br>
+<h2><b>Donations</b></h2>
+<p style="font-size:100%";>
+In rural areas, many are deprived from basic agricultural technologies. This is the main occupation in rural areas which is why improvement is necessary for them to thrive. Our programme will benefit India’s agricultural system by making new technologies more affordable it will also provide. This field vastly contributes to our food and economic industries. It is imperative that we support our farmers, any form of donations (i.e. cheques, agricultural technologies, fertilisers etc.) would be greatly appreciated!
+<br>
+Would you like to donate to our farmers? We’ll contact you! All you have to do is send in a few details.</p>
+<br>
+<br>
+<form action="file:///D:/Hackathon/WebContent/html/welcome.html#home">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" value="Ty
+pe in your name"><br><br>
+  <label for="phoneno">Phone Number:</label><br>
+  <input type="text" id="phoneno" name="phoneno" value="type in your phone number"><br><br>
+  <label for=“donate”>Donate:</label><br>
+  <input type="text" id=“donate” name=“what do you want to donate value><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br><br>
+<h2><b>Agricultural Loan</b></h2>
+<p style="font-size:100%";> 
+Agricultural loans are availed by a farmer to fund seasonal agricultural operations 
+or related activities like animal farming, pisci-culture or purchase of land or agricultural tools. This type of loan also helps buying inputs such as fertilizers, seeds, insecticides etc. and engaging labour for cultivating and harvesting the crops. In addition, purchasing of land, or purchasing of agricultural tools, storage of produce and transport, cost of ploughing land for sowing, weeding, and transplantation also are included under purview of agricultural loans. Farmers can avail an agricultural loan starting at 7% p.a. and with processing fee ranging between zero to 4% of the loan amount.
+<br>
+<br>
+<h2>Bank<br></h2>
+State Bank of India (SBI) is the market leader when it comes to agriculture-related financing. It has a wide network of branches spread across the country and offers financing facility to nearly 1.01 crore farmers. SBI offers a whole range of services to facilitate agriculture and allied activities.
+<br>
+<br>
+<hr>
+<p>
+<br>
+<h1>Contact Us</h1>
+<p style="font-size:125%">
+You can contact us at - <br>
+Email: agria@gmail.com <br>
+Phone no.: +911234567890 <br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.open-button {
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<button class="open-button" onclick="openForm()">message us</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Email: agria@gmail.com
+Phone no.: +911234567890" name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</div>
+</body>
+</html>
+
+</body>
+</html>

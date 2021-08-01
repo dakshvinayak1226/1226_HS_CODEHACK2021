@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+<!-- for scolling images -->
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:white;
+}
+
+.topnav a {
+  float: left;
+  color: Green;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color:green;
+}
+
+.topnav a.active {
+  background-color: white;
+   text-align: left;
+   padding: 20px 700px 20px 20px;
+  color: Green;
+  font-size: 40px;
+  text-align: left;
+}
+</style>
+
+</head>
+
+<body>
+<div class="topnav">
+<div style="text-align:left">
+  <a class="active" href="./welcome.html">Agrico.</a>
+</div>
+ <a href= "product.html">Product</a>
+ <a href="./contact.html">Questions</a>
+ <a href="./idk.html">Our services</a>
+</div>
+<hr>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="10.jpg" style="width:100%">
+  <div class="text">Caption Text One</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="./6.jpeg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="./7.jpeg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+ 
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+<table>
+<tr>
+<td width="50%">
+<p style="font-size:210%; font-weight:bold" >
+Sustainable Agriculture
+</p>
+<p style="font-size:125%">
+Sustainability rests on the principle that we must meet the needs of the present without compromising the ability of future generations to meet their own needs.
+Concerns about sustainability in agricultural systems centre on the need to develop technologies and practices that do not have adverse effects on environmental goods and services, are accessible to and effective for farmers, and lead to improvements in food productivity.
+Despite great progress in agricultural productivity in the past half-century, with crop and livestock productivity strongly driven by increased use of fertilizers, irrigation water, agricultural machinery, pesticides and land, it would be over-optimistic to assume that these relationships will remain linear in the future.
+</p>
+<p style="font-size:200%; font-weight:bold" >
+Our aim
+<p>
+<p style="font-size:125%">
+To find a good balance between the need for food production and the preservation of the ecological system within the environment.
+To minimize the use of those non-renewable inputs that cause harm to the environment or to the health of farmers and consumers, and to make productive use of the knowledge and skills of farmers.
+To focus  on producing long-term crops and livestock while having minimal effects on the environment.
+</p>
+</td>
+<td>
+<img src="7.jpeg" style="float:center; width:100%; height:500px;" alt="Green Fields" >
+</td>
+</tr>
+</table>
+ 
+<hr>
+<p>
+<br>
+<h1>Contact Us</h1>
+<p style="font-size:125%">
+You can contact us at - <br>
+Email: agria@gmail.com <br>
+Phone no.: +911234567890 <br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.open-button {
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<button class="open-button" onclick="openForm()">message us</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Email: agria@gmail.com
+Phone no.: +911234567890" name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</div>
+</body>
+</html>
+
+</body>
+</html>
